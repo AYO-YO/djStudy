@@ -18,7 +18,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from test_app import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
+    # 访问/，则去views中寻找index函数
+    path('',views.index)
 ]

@@ -1,1 +1,4 @@
 .idea/
+*/migrations/*
+*/settings.py
+*.sqlite3
