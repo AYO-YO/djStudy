@@ -62,6 +62,10 @@ python manage.py startapp app_name
 
 - 编辑URL和视图函数对应关系，`/urls.py`
 
+  url -> 函数
+
+  ![image-20220724150755898](https://img.2fanbaby.cn/img/202207241508995.png)
+
 - 编写视图函数
 
   ```python
@@ -75,5 +79,27 @@ python manage.py startapp app_name
   python manage.py runserver
   ```
 
-  Pycharm一键
+  Pycharm一键启动
+
+## 编写一个页面
+
+### templates
+
+```python
+return render(request, "html_remplate")
+```
+
+### 静态文件
+
+```text
+├── static
+│   ├── css
+│   │   └── 存放css
+│   ├── img
+│   │   └── 存放图片
+│   ├── js
+│   │   └── 存放js
+│   └── plugins
+│       └── 存放插件（bootst）
+```
 
