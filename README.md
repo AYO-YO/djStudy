@@ -100,6 +100,14 @@ return render(request, "html_remplate")
 │   ├── js
 │   │   └── 存放js
 │   └── plugins
-│       └── 存放插件（bootst）
+│       └── 存放插件（bootstrap）
+```
+
+## 请求和响应
+
+请求时Django比Flask多了一个crsf的校验。表单的中的请求应在表单最上层加入
+
+```django
+{% crsf_token %}
 ```
 
