@@ -23,9 +23,6 @@ from test_app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    # 访问/，则去views中寻找index函数
-    path('', views.index),
-
     # 模板
-    path('login/', views.login)
+    path('login/', views.Login.as_view())
 ]
